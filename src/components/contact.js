@@ -44,7 +44,7 @@ const Contact = () => {
     // بناء الرسالة لإرسالها عبر واتساب
     const message = `اسم: ${formData.name}\nبريد إلكتروني: ${formData.email}\nرقم هاتف: ${formData.phone}\nالعنوان: ${formData.address}\nالرسالة: ${formData.message}`;
     
-    const whatsappLink = `https://wa.me/201151432229?text=${encodeURIComponent(message)}`;
+    const whatsappLink = `https://wa.me/201145113456?text=${encodeURIComponent(message)}`;
 
     // فتح رابط واتساب مع الرسالة
     window.open(whatsappLink, '_blank');
@@ -169,11 +169,11 @@ const Contact = () => {
             <p className="font-semibold text-center mb-2">رئيس مجلس الإدارة</p>
             <a href="tel:01234567890" className="flex items-center hover:underline transition-colors">
               <i className="fas fa-phone ml-2"></i>
-              <span>01234567890</span>
+              <span>01145113456</span>
             </a>
             <a href="mailto:ceo@example.com" className="flex items-center hover:underline transition-colors mt-2">
               <i className="fas fa-envelope ml-2"></i>
-              <span>ceo@example.com</span>
+              <span>ceo@easylock.com</span>
             </a>
           </div>
         </div>
@@ -183,11 +183,11 @@ const Contact = () => {
             <p className="font-semibold text-center mb-2">فريق المبيعات</p>
             <a href="tel:01145113456" className="flex items-center hover:underline transition-colors">
               <i className="fas fa-phone ml-2"></i>
-              <span>01145113456</span>
+              <span>01122988700 </span>
             </a>
             <a href="mailto:sales@example.com" className="flex items-center hover:underline transition-colors mt-2">
               <i className="fas fa-envelope ml-2"></i>
-              <span>sales@example.com</span>
+              <span>sales@easylock.com</span>
             </a>
           </div>
         </div>
@@ -201,7 +201,7 @@ const Contact = () => {
             </a>
             <a href="mailto:marketing@example.com" className="flex items-center hover:underline transition-colors mt-2">
               <i className="fas fa-envelope ml-2"></i>
-              <span>marketing@example.com</span>
+              <span>marketing@easylock.com</span>
             </a>
           </div>
         </div>
@@ -211,11 +211,11 @@ const Contact = () => {
             <p className="font-semibold text-center mb-2">فريق التوظيف</p>
             <a href="tel:01143223219" className="flex items-center hover:underline transition-colors">
               <i className="fas fa-phone ml-2"></i>
-              <span>01143223219</span>
+              <span>01145113456</span>
             </a>
             <a href="mailto:recruitment@example.com" className="flex items-center hover:underline transition-colors mt-2">
               <i className="fas fa-envelope ml-2"></i>
-              <span>HR@example.com</span>
+              <span>HR@easylock.com</span>
             </a>
           </div>
         </div>
@@ -226,7 +226,7 @@ const Contact = () => {
       </div>
    {/* الروابط الاجتماعية */}
 <div className="mt-8 flex justify-center gap-6 flex-wrap">
-  <a href="#" className="text-xl text-gray-700 hover:text-blue-600 transition-transform transform hover:scale-110 duration-200">
+  <a href="https://web.facebook.com/easylock.icr/?_rdc=1&_rdr#" className="text-xl text-gray-700 hover:text-blue-600 transition-transform transform hover:scale-110 duration-200">
     <FiFacebook />
   </a>
   <a href="#" className="text-xl text-gray-700 hover:text-blue-400 transition-transform transform hover:scale-110 duration-200">
