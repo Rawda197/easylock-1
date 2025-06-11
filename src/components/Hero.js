@@ -23,7 +23,7 @@ const Hero = () => {
         {/* أيقونات مواقع التواصل الاجتماعي مرتبة بجانب بعضها */}
         <div className="flex justify-center space-x-6 mb-8">
           <a 
-            href="https://www.facebook.com" 
+            href="https://web.facebook.com/easylock.icr/?_rdc=1&_rdr#" 
             target="_blank" 
             rel="noopener noreferrer"
             className="transition-transform hover:scale-110 hover:text-blue-600"

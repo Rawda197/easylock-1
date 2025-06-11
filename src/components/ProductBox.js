@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation"; // استيراد useRouter
 
 const ProductBox = ({ product }) => {
   const router = useRouter(); // تهيئة useRouter
-  const whatsappUrl = `https://wa.me/01151432229?text=أريد الإستفسار عن ${product.name}`;
+  const whatsappUrl = `https://wa.me/01145113456?text=أريد الإستفسار عن ${product.name}`;
 
   // دالة التوجيه إلى صفحة التفاصيل
   const handleDetailsClick = () => {

@@ -1,5 +1,5 @@
 "use client";
-
+ import Image from "next/image";
 import { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 
@@ -36,10 +36,16 @@ const Header = () => {
           </ul>
         </nav>
 
-        {/* اللوجو على اليمين */}
-        <div className="flex items-center">
-          <img src="/logo.jpg" alt="Logo" className="w-15 h-12 rounded-full" />
-        </div>
+    
+
+<Image
+  src="/logo.jpg"
+  alt="Logo"
+  width={60}
+  height={64}
+  className="rounded-full"
+/>
+
 
         {/* أيقونة القائمة للشاشات الصغيرة */}
         <div className="md:hidden">

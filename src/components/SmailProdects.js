@@ -4,9 +4,8 @@ import { useRouter } from "next/navigation";
 
 const ProductBox = ({ product }) => {
   const router = useRouter();
-  const whatsappUrl = `https://wa.me/01151432229?text=أريد الإستفسار عن ${product.name}`;
+  const whatsappUrl = `https://wa.me/01145113456?text=أريد الإستفسار عن ${product.name}`;
 
-  // توجيه لصفحة تفاصيل المنتج مع المسار الصحيح
   const handleDetailsClick = () => {
     router.push(`/products/details/${product.id}`);
   };
