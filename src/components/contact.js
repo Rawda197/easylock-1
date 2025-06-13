@@ -5,7 +5,7 @@ import { SiTiktok } from 'react-icons/si';
 import Lottie from "lottie-react"; // ✅ مكتبة حديثة
 
 import Footer from '../components/Footer';
-import LogoAnimation from '../app/animation/Logo/LogoAnimation.json';
+// import LogoAnimation from '../app/animation/Logo/LogoAnimation.json';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
