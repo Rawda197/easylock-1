@@ -45,7 +45,7 @@ const ArticleDetailPage = ({ params }) => {
   );
 
   return (
-    <div dir="rtl"> {/* ✅ تم تصحيح dir="rtl" */}
+    <div> {/* ✅ تم تصحيح dir="rtl" */}
       <Header />
 
       <div className="p-4">

@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // مهم جداً علشان نستخدم Netlify
+  // احذفي output: 'export'
 };
 
 export default nextConfig;
