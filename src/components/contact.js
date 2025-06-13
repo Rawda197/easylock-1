@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin, FiYoutube } from 'react-icons/fi';
 import { SiTiktok } from 'react-icons/si';
-import Lottie from "lottie-react"; // ✅ مكتبة حديثة
 
 import Footer from '../components/Footer';
 // import LogoAnimation from '../app/animation/Logo/LogoAnimation.json';
@@ -16,7 +15,6 @@ const Contact = () => {
     message: "",
   });
   const [error, setError] = useState("");
-  const [showAnimation, setShowAnimation] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -36,22 +34,18 @@ const Contact = () => {
     }
 
     setError("");
-    setShowAnimation(true);
 
     const message = `اسم: ${formData.name}\nبريد إلكتروني: ${formData.email}\nرقم هاتف: ${formData.phone}\nالعنوان: ${formData.address}\nالرسالة: ${formData.message}`;
     const whatsappLink = `https://wa.me/201145113456?text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, '_blank');
 
-    setTimeout(() => {
-      setShowAnimation(false);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        address: "",
-        message: "",
-      });
-    }, 4000);
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      address: "",
+      message: "",
+    });
   };
 
   return (
@@ -113,19 +107,11 @@ const Contact = () => {
               إرسال
             </button>
           </form>
-
-          {showAnimation && (
-            <div className="mt-6 flex justify-center">
-              <Lottie animationData={SendAnimation} loop={false} className="w-[150px] h-[150px]" />
-            </div>
-          )}
         </div>
 
         <div className="w-full bg-blue-900 text-white p-6 rounded-lg mt-6">
           <h2 className="text-2xl font-bold mb-4 text-center">معلومات التواصل معنا</h2>
           <div className="flex flex-col lg:flex-row lg:flex-wrap items-center gap-6">
-
-            {/* رئيس مجلس الإدارة */}
             <ContactBlock title="رئيس مجلس الإدارة" phone="01145113456" email="ceo@easylock.com" />
             <ContactBlock title="فريق المبيعات" phone="01122988700" email="sales@easylock.com" />
             <ContactBlock title="فريق التسويق" phone="01151432229" email="marketing@easylock.com" />
