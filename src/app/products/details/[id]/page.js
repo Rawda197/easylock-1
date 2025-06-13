@@ -1,26 +1,18 @@
 "use client";
+
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { FaStar } from 'react-icons/fa';
-import Header from '../../../../components/Header'; 
-import Footer from '../../../../components/Footer'; 
+import Header from '../../../../components/Header';
+import Footer from '../../../../components/Footer';
 import SuggestedProducts from '../../../../components/SuggestedProducts';
-
-// ✅ دالة مهمة لـ Vercel
-export async function generateStaticParams() {
-  const products = [
-    { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }
-  ];
-  return products.map((product) => ({
-    id: product.id.toString(),
-  }));
-}
 
 const Page = ({ params }) => {
   const [product, setProduct] = useState(null);
   const router = useRouter();
 
   useEffect(() => {
+    // جلب بيانات المنتج بناءً على الـ id
     const fetchedProduct = {
       id: parseInt(params.id),
       name: `منتج ${params.id}`,
@@ -31,7 +23,7 @@ const Page = ({ params }) => {
     setProduct(fetchedProduct);
   }, [params.id]);
 
-  if (!product) return <div>Loading...</div>;
+  if (!product) return <div className="text-center py-10">...جاري التحميل</div>;
 
   const whatsappUrl = `https://wa.me/01151432229?text=أريد الإستفسار عن ${product.name}`;
 
